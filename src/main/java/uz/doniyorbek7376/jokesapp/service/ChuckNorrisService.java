@@ -6,11 +6,10 @@ import guru.springframework.norris.chuck.ChuckNorrisQuotes;
 
 @Service
 public class ChuckNorrisService implements JokesService {
+    private ChuckNorrisQuotes quotes = new ChuckNorrisQuotes();
 
     @Override
     public String getRandomJoke() {
-        ChuckNorrisQuotes quotes = new ChuckNorrisQuotes();
-
         return quotes.getRandomQuote();
     }
 }
