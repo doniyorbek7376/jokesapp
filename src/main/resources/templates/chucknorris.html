@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html en="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title> Jokes App</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 25%;
+        }
+        </style>
+</head>
+<body>
+    <h1 th:text="${joke}">Joke Text</h1>
+</body>
+</html>
